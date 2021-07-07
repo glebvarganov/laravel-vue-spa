@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    max-width: 1200px;
+}
+
+.button {
+    @apply .border .border-grey-light .px-8 .py-2 .rounded-full .text-black .font-bold .text-xs;
+    transition: all 0.3s;
+
+    &:hover {
+        @apply .bg-blue-light .border-blue-light .text-white;
+    }
+}
